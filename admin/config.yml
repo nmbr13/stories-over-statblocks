@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: nmbr13/stories-over-statblocks
   branch: main
 
 # Uncomment the line below to enable local development
