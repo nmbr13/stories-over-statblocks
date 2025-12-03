@@ -2,6 +2,7 @@ backend:
   name: github
   repo: nmbr13/stories-over-statblocks
   branch: main
+  auth_type: implicit
 
 # Uncomment the line below to enable local development
 # local_backend: true
