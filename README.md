@@ -5,7 +5,7 @@ A minimalist Jekyll blog powered by the [Millennial theme](https://github.com/Le
 ## Features
 
 - 🎨 **Millennial Theme** - Clean, minimalist design focused on content
-- 📝 **Decap CMS** - User-friendly admin interface for managing content
+- 📝 **Pages CMS** - User-friendly admin interface for managing content (via pagescms.org)
 - 🚀 **GitHub Pages** - Automatic deployment via GitHub
 - 📱 **Responsive** - Mobile-friendly design
 - 🔍 **SEO Optimized** - Built-in SEO tags and sitemap generation
@@ -39,26 +39,32 @@ A minimalist Jekyll blog powered by the [Millennial theme](https://github.com/Le
 4. **View your site**
    - Open [http://localhost:4000](http://localhost:4000) in your browser
 
-## Content Management with Decap CMS
+## Content Management with Pages CMS
 
 ### Accessing the CMS
 
-1. **For production (GitHub Pages):**
-   - Visit: `https://nmbr13.github.io/stories-over-statblocks/admin/`
-   - Authenticate with GitHub
+Pages CMS is a hosted service that connects directly to your GitHub repository. To use it:
 
-2. **For local development:**
-   - Uncomment `local_backend: true` in `admin/config.yml`
-   - Run `npx netlify-cms-proxy-server` in a separate terminal
-   - Visit: `http://localhost:4000/admin/`
+1. **Visit Pages CMS:**
+   - Go to: https://pagescms.org
+   - Sign in with your GitHub account
+   - Grant access to your `stories-over-statblocks` repository
+
+2. **Start Editing:**
+   - Select your repository
+   - Browse and edit your content files
+   - Changes are committed directly to GitHub
 
 ### Managing Content
 
-The CMS allows you to:
-- ✏️ Create and edit blog posts
+Pages CMS allows you to:
+- ✏️ Create and edit blog posts in `_posts/`
 - 📄 Create and edit pages
-- 🖼️ Upload images (stored in `assets/img/uploads/`)
-- 🏷️ Manage categories and tags
+- 🖼️ Upload and manage images
+- 🏷️ Edit front matter (categories, tags, etc.)
+- 📝 Edit any file in your repository
+
+**Note:** Pages CMS works entirely through GitHub - no files need to be added to your repository. It's a web-based editor that connects to your GitHub repo.
 
 ## Project Structure
 
@@ -71,9 +77,6 @@ stories-over-statblocks/
 ├── _layouts/            # Page templates
 ├── _posts/              # Blog posts (YYYY-MM-DD-title.markdown)
 ├── _sass/               # Sass stylesheets
-├── admin/               # Decap CMS files
-│   ├── config.yml       # CMS configuration
-│   └── index.html       # CMS entry point
 ├── assets/              # Static assets (CSS, images)
 └── Gemfile              # Ruby dependencies
 ```
@@ -125,7 +128,7 @@ This site is configured for GitHub Pages:
 
 - [Jekyll](https://jekyllrb.com/) - Static site generator
 - [Millennial Theme](https://github.com/LeNPaul/Millennial) - Jekyll theme
-- [Decap CMS](https://decapcms.org/) - Content management system
+- [Pages CMS](https://pagescms.org/) - Content management system for GitHub
 - [GitHub Pages](https://pages.github.com/) - Hosting
 
 ## License
