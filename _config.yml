@@ -26,6 +26,9 @@ baseurl: "" # empty for custom domain
 url: "https://storiesoverstatblocks.com" # your custom domain
 
 
+jekyll_compose:
+  auto_open: true
+
 # Build settings
 # Theme files are now local (copied from _themes/millennial)
 markdown: kramdown
@@ -37,6 +40,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-compose
+  
 
 # Exclude from processing.
 # The following items will not be processed, by default.
