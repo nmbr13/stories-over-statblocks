@@ -64,3 +64,19 @@ exclude:
   - vendor/ruby/
   - DOCUMENTATION.md
   - _themes/
+
+jekyll_compose:
+  auto_open: true
+  default_front_matter:
+    drafts:
+      description:
+      image:
+      category: 
+      tags: draft
+    posts:
+      description:
+      image:
+      category:
+      tags:
+      published: true
+      sitemap: false
